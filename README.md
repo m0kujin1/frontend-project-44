@@ -24,6 +24,7 @@ cd frontend-project-44
 
 <!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
 https://asciinema.org/a/DsUhqDkFOyDkXjoU
+https://asciinema.org/a/2X0XFIvqDwHpWVkn
 ---
 
 <details>
