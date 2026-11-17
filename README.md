@@ -26,6 +26,7 @@ cd frontend-project-44
 https://asciinema.org/a/DsUhqDkFOyDkXjoU
 https://asciinema.org/a/2X0XFIvqDwHpWVkn
 https://asciinema.org/a/XuK1VXj0ExTrcNoB
+https://asciinema.org/a/MUs6BWQhDfHx38KQ
 ---
 
 <details>
