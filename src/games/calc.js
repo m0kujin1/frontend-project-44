@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync';
-
-const getRandomNumber = (min = 1, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min;
+import { getRandomNumber } from '../utils/random.js';
 
 const getOperator = () => {
   const operators = ['+', '-', '*'];
@@ -30,7 +29,8 @@ const playCalc = () => {
   const correctAnswer = calculate(num1, operator, num2);
 
   console.log(`Question: ${question}`);
-  const answer = readlineSync.question('Your answer: ');
+  
+  const answer = readlineSync.question('Your answer: ').trim();
 
   return { answer, correctAnswer: String(correctAnswer) };
 };

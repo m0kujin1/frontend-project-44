@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync';
-
-const getRandomNumber = (min = 2, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min;
+import { getRandomNumber } from '../utils/random.js';
 
 const isPrime = (num) => {
   if (num < 2) {
@@ -19,7 +18,7 @@ const playPrime = () => {
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
 
   console.log(`Question: ${number}`);
-  const answer = readlineSync.question('Your answer: ');
+  const answer = readlineSync.question('Your answer: ').trim();
 
   return { answer, correctAnswer };
 };

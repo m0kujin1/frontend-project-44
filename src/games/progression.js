@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync';
-
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+import { getRandomNumber } from '../utils/random.js';
 
 const generateProgression = (start, step, length) => {
   const progression = [];
@@ -27,7 +26,7 @@ const playProgression = () => {
   const question = progression.join(' ');
 
   console.log(`Question: ${question}`);
-  const answer = readlineSync.question('Your answer: ');
+  const answer = readlineSync.question('Your answer: ').trim().toLowerCase();
 
   return { answer, correctAnswer: String(correctAnswer) };
 };
